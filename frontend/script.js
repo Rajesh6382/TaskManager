@@ -44,7 +44,7 @@ function createTaskElement(task) {
     li.appendChild(span);
 
     let doneButton = document.createElement("button");
-    doneButton.textContent = task.completed ? "Undo" : "Done";
+    doneButton.textContent = task.completed ? "Done" : "Done";
     doneButton.onclick = function () { markDone(this, task.id, !task.completed); };
     li.appendChild(doneButton);
 
